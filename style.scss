@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+
+    background-color:hsl(185, 75%, 39%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+
+    .card{
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+        .main{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 25px;
+            border-bottom: 1px solid hsl(0, 0%, 82%);
+            &__profile-picture{
+                position: absolute;
+                top: -40%;
+                img{
+                    border-radius: 50%;
+                    border: 6px solid white;
+                }
+            }
+            &__username{
+                margin-top: 45px;
+
+                h3{
+                    margin-bottom: 10px;
+                }
+                span{
+                    font-weight: 400;
+                    margin-left: 5px;
+                    color: hsl(0, 0%, 59%);
+                }
+            }
+            &__location{
+                color: hsl(0, 0%, 59%);
+                font-size: 16px;
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-around;
+            
+            margin: 25px 30px;
+            h3{
+                margin: 0;
+            }
+            span{
+                font-size: 12px;
+                letter-spacing: 1.5px;
+                font-weight: 400;
+                color: hsl(0, 0%, 59%);
+            }
+            &__followers{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__likes{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__photos{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
